@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="robot.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="App.js" defer></script>
+    <script src="canvas.js" defer></script>
+
+</head>
+<body>
+
+    <canvas id="canvasapp"></canvas>
+
+    <div class="wrapper">
+        <div class="navbar">
+            <button class="navbar-btn chat-btn">chat</button>
+            <button class="navbar-btn advice-btn">advice</button>
+            <button class="options-but navbar-btn">bot options</button>
+        </div>
+        <div class="content">
+            <div class="chat__container">
+                <div class="chat-name">ByChatGPT</div>
+                <div class="chat">
+                    <!-- <div class="user-message">
+                        <p>Hello bot</p>
+                    </div>
+                    <div class="bot-message">
+                        <p>You give people joy and inspiration.
+                            With you, every moment is filled with joy.
+                            You know, your smile is brighter than all the stars in the sky.
+                            Smile! You make this world a better place.</p>
+                    </div> -->
+                </div>
+                <form action="#" class="GPTform">
+                    <input type="text" placeholder="request" class="GPTform-input">
+                     <button type="submit" class="GPTform-button">
+                        ›
+                     </button>
+                </form>
+            </div>
+            <div class="element">
+                <div class="text-bloke">
+                    <div class="text">
+                    </div>
+                </div>
+                <div class="robot__container">
+                    <div class="hand left-hand"></div>
+                    <div class="bot-leg --flex-center --hover --mousemove --transparent">
+                        <div class="bot-skirt --flex-center --hover  --mousemove">
+                            <div class="bot-neck --flex-center --hover  --mousemove --transparent">
+                                <div class="bot-head --flex-center --hover  --mousemove --transparent">
+                                    <div class="eye --flex-center --hover --movement">
+                                        <div class="pupil --flex-center --hover --mousemove">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hand right-hand"></div>
+        
+                    <div class="bot-voice">
+                        <h1 class="bot-words --mousemove"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="options__container">
+                <li class="options__container-item active" id="optionMove">move</li>
+                <li class="options__container-item" id="optionWander">wander</li>
+                <li class="options__container-item active" id="optionEmotion">emotion</li>
+                <li class="options__container-item active" id="optionSpeak">speak</li>
+                <li class="options__container-item" id="color">Color: <div><input id="colorInput" type="color" name="color"></div></li>
+                <li class="options__container-item active" id="optionColor">color randomize</li>
+                <li class="options__container-item active" id="optionCube">cube</li>
+                <li class="options__container-item" id="optionCircle">circle</li>
+                <li class="options__container-item active" id="optionGlow">glow</li>
+                <li class="options__container-item active" id="optionCanvas">background</li>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
